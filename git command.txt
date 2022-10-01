@@ -1,0 +1,7 @@
+git status //mijery etat an'ny tokony atao
+
+git init //initialiser git
+git add . //ajouter tous dans le dossier
+git commit -m "comment" //manis coms
+git push //mandefa any am github
+

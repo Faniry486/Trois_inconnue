@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equation</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(./banner.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        h2{
+            color: rgb(51, 25, 25);
+        }
+        .enter{
+            background: linear-gradient(to top, #cbbabad6, #817373d3);
+            margin: 0px 500px 20px 500px;
+            padding: 30px 0px;
+            border-radius: 7px;
+    
+        }
+        .sortie{
+            background: linear-gradient(to top, #cbbabaef, #9d8d8de8);
+            margin: 0px 500px 20px 500px;
+            padding: 30px 0px;
+            border-radius: 7px;
+            
+        }
+        input{
+            width: 20px;
+            margin: 5px;
+        }
+        #sub{
+            width: 100px;
+            margin-top: 15px;
+            padding: 10px 20px;
+        }
+        #sub:hover{
+            background-color: rgb(51, 25, 25);
+            color: white;
+        }
+        #affiche9, #affiche10, #affiche11{
+            color: black;
+        }
+        #affiche12{
+            border: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="enter">
+        <h2>Résoudre une équation a 3 inconnue <br> par Cramer</h2>
+        <input type="text" name="" id="enterA1"> X +
+        <input type="text" name="" id="enterY1"> Y +
+        <input type="text" name="" id="enterZ1"> Z = 
+        <input type="text" name="" id="enterR1"><br>
+    
+        <input type="text" name="" id="enterA2"> X +
+        <input type="text" name="" id="enterY2"> Y +
+        <input type="text" name="" id="enterZ2"> Z = 
+        <input type="text" name="" id="enterR2"><br>
+    
+        <input type="text" name="" id="enterA3"> X +
+        <input type="text" name="" id="enterY3"> Y +
+        <input type="text" name="" id="enterZ3"> Z = 
+        <input type="text" name="" id="enterR3"><br>
+                    
+        <button id="sub" type="submit" value="resoudre" onclick="equation()">Resoudre</button>
+        <!-- <a href="#"><button>encore</button></a> -->
+    </div>
+
+    <p></p>
+
+    <div class="sortie">
+        <h2>Réponse</h2>
+        <h3 id="affiche1"></h3>
+        <h3 id="affiche2"></h3>
+        <h3 id="affiche3"></h3>
+        <h3 id="affiche4"></h3>
+        <h3 id="affiche5"></h3>
+
+        <div class="delta">
+            <h3 id="affiche6"></h3>
+            <h3 id="affiche7"></h3>
+            <h3 id="affiche8"></h3>
+        </div>
+
+        <h3 id="affiche9"></h3>
+        <h3 id="affiche10"></h3>
+        <h3 id="affiche11"></h3>
+        <h3 id="affiche12"></h3>
+    </div>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
